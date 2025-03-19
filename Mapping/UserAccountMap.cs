@@ -78,6 +78,13 @@ public class UserAccountMap : IEntityTypeConfiguration<UserAccount>
         .HasColumnType("SMALLDATETIME")
         .IsRequired();
 
+        // Column 'AcessLevel'
+        builder.Property(x => x.AcessLevel)
+        .HasColumnName("AcessLevel")
+        .HasColumnType("INT")
+        .HasDefaultValue(1)
+        .IsRequired();
+
         // Column 'Active'
         builder.Property(x => x.Active)
         .HasColumnName("Active")

@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.AspNetCore.Authentication" Version="2.3.0" />
+    <PackageReference Include="microsoft.AspNetCore.Authentication.JWTBearer" Version="8.0.3" />
     <PackageReference Include="microsoft.entityframeworkcore" Version="9.0.3" />
     <PackageReference Include="microsoft.entityframeworkcore.design" Version="9.0.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

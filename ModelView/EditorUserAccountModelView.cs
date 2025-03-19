@@ -29,4 +29,7 @@ public class UserAccountModelView
     [DataType(DataType.Date, ErrorMessage = "O campo BirthDate não é uma data válido.")]
     [BirthDateValidation(ErrorMessage = "O campo BirthDate não pode ser uma data maior que a Data Atual.")]
     public DateTime BirthDate { get; set; }
+
+    [Range(1, 2, ErrorMessage = "Deve escolher um nível de 1 (User) à 2(Admin)")]
+    public int AcessLevel { get; set; } = 1;
 }

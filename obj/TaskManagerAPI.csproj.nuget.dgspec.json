@@ -43,6 +43,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "microsoft.AspNetCore.Authentication.JWTBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "microsoft.entityframeworkcore": {
               "target": "Package",
               "version": "[9.0.3, )"
